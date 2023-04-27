@@ -26,6 +26,8 @@ code {
   align-items: center; */
 }
 .home .bg-image {
+  top: 6.5%;
+  position: absolute;
   /* The image used */
   background-image: url("../public/images/banner.png");
 
@@ -34,7 +36,7 @@ code {
   -webkit-filter: blur(8px);
 
   /* Full height */
-  height: 94vh;
+  height: 93vh;
   width: 100vw;
   /* Center and scale the image nicely */
   background-position: center;
@@ -63,6 +65,8 @@ code {
   height: 300px;
   padding: 20px;
   text-align: center;
+}
+.navbar-collapse.collapse.show {
 }
 
 .glitch {
