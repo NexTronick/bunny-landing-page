@@ -1,4 +1,3 @@
-import Navigation from "./Navigation";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,8 +6,8 @@ function Gallery() {
   function AddImages() {
     const list = [];
 
-    for (let i = 0; i <= 9; i++) {
-      var imageSrc = "images/Chimutans/download (" + i + ").png";
+    for (let i = 0; i <= 14; i++) {
+      var imageSrc = "images/Chimutans School/download (" + i + ").png";
       var title = `Chimutans, no-${i}`;
       var id = `No. ${i}`;
       var display = {
@@ -38,10 +37,14 @@ function Gallery() {
                       src={item.imageSrc}
                       alt={item.title + " Image"}
                     />
-                    <div class="img-txt w-90 mx-auto">
-                      <span>Chimutans</span>
+                    <div className="img-txt w-80 px-2" style={{ width: "80%" }}>
+                      <span className="w-75 mx-auto">Student chimutan </span>
                       <br />
-                      <span>{item.id}</span>
+                      <span>
+                        {item.i >= 10
+                          ? "#00" + String(item.i + 1)
+                          : "#000" + String(item.i + 1)}
+                      </span>
                     </div>
                   </div>
                 </Col>

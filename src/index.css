@@ -145,6 +145,21 @@ code {
     opacity: 0.75;
   }
 }
+@media screen and (max-width: 778px) {
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(0.15em, -0.03em);
+    opacity: 0.75;
+  }
+
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.1em, 0.03em);
+    opacity: 0.75;
+  }
+}
 @keyframes glitch {
   0% {
     text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
@@ -173,6 +188,86 @@ code {
   100% {
     text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
       -0.04em -0.025em 0 #fffc00;
+  }
+}
+
+/*Follow*/
+.social_box {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+.social_box ul {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 2%;
+  margin-top: 0.5%;
+}
+.social_box ul .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #4a148c;
+  color: #eee;
+  line-height: 50px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 18px;
+  pointer-events: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  transition: opacity 0.5s 0.75s ease-out;
+}
+.social_box ul:hover .text {
+  opacity: 0;
+  transition: opacity 0.5s 0.125s ease-out;
+}
+.social_box ul li {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: #4a148c;
+  text-align: center;
+  line-height: 55px;
+  margin: 0 -16px;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background-color 0.5s ease-out, border-radius 0.5s 0.25s ease-out,
+    margin 0.5s 0.25s ease-out;
+}
+.social_box ul li:hover {
+  background: #6a1b9a;
+}
+.social_box ul li svg {
+  font-size: 40px;
+  opacity: 0;
+  margin: 8px 0px 0px 8px;
+  display: flex;
+  justify-content: center;
+  transition: opacity 1.7s;
+}
+.social_box ul:hover li svg {
+  opacity: 1;
+}
+.social_box ul li:nth-child(1) {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.social_box ul li:nth-child(4) {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.social_box ul:hover li {
+  border-radius: 50px;
+  margin: 0 3px;
+}
+@media screen and (max-width: 1200px) {
+  .social_box ul {
+    margin-right: 5%;
+    margin-top: 1%;
   }
 }
 

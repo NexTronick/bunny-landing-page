@@ -15,8 +15,12 @@ function About() {
       <div className="main-texts w-75 mx-auto py-1">
         <h3>Chimutan</h3>
         <p>
-          This is a Chimutans Year Of The Rabbits collections. Inspired by the
-          Chimutans.
+          This is Year of the rabbit Chimutan: Back to school collection. We
+          made this collection in hopes to inspire people to study hard and stay
+          vigilant with our lovely and cute chimutan in the year of the rabbit.
+          Whether they are a student or an adult working, knowledge is virtue
+          and that everyone should keep learning to be a better "self" like our
+          hard working student CHIMUTAN.
         </p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
