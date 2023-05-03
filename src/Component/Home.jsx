@@ -1,7 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { useState, useEffect } from "react";
-import { FaTwitter, FaTelegram, FaDiscord, FaMedium } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaTelegram,
+  FaDiscord,
+  FaMedium,
+  FaYoutube,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 function Home() {
   //useEffect
@@ -57,6 +63,11 @@ function Home() {
             <li>
               <Link to="#">
                 <FaMedium size={35} />
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <FaYoutube size={35} />
               </Link>
             </li>
             <div className="text">Follow</div>

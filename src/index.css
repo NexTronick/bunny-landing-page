@@ -202,7 +202,7 @@ code {
   position: relative;
   display: inline-block;
   float: right;
-  margin-right: 2%;
+  margin-right: 3%;
   margin-top: 0.5%;
 }
 .social_box ul .text {
@@ -213,7 +213,7 @@ code {
   background: #4a148c;
   color: #eee;
   line-height: 50px;
-  width: 150px;
+  width: 180px;
   border-radius: 50px;
   font-size: 18px;
   pointer-events: none;
@@ -266,7 +266,7 @@ code {
 }
 @media screen and (max-width: 1200px) {
   .social_box ul {
-    margin-right: 5%;
+    margin-right: 7%;
     margin-top: 1%;
   }
 }
