@@ -50,7 +50,7 @@ function Home() {
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to="https://discord.gg/GSzsnGKYz4" target="_blank">
                 <FaDiscord size={35} />{" "}
               </Link>
             </li>
