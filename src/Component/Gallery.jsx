@@ -24,8 +24,16 @@ function Gallery() {
   return (
     <div className="gallery-div">
       <h1 className="glitch text-center">Gallery</h1>
-      <h3 className="gallery-sub">Chimutans minting page</h3>
-      <div className="w-75 mx-auto mt-5">
+      <h3 className="gallery-sub">Chimutans Minting Page</h3>
+      <div
+        className="w-75 mx-auto mt-5 scrollbar scrollbar-near-moon"
+        style={{
+          height: "60vh",
+          overflow: "hidden scroll",
+          border: "1px solid",
+          padding: "10px",
+        }}
+      >
         <Container>
           <Row>
             {AddImages().map((item) => {
